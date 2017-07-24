@@ -23,7 +23,7 @@ CONFIGURE_ARGS += --extra-libs="-lxml2 -ldl" --pkg-config=/usr/bin/pkg-config --
 CONFIGURE_ARGS += --enable-cross-compile --enable-rpath --enable-pic
 CONFIGURE_ARGS += --enable-shared --enable-optimizations --enable-pthreads
 CONFIGURE_ARGS += --enable-gpl --enable-version3 --enable-nonfree
-CONFIGURE_ARGS += --enable-fontconfig --enable-libass --enable-libbluray
+CONFIGURE_ARGS += --enable-fontconfig --enable-libass --enable-libbluray --enable-avresample
 CONFIGURE_ARGS += --enable-libfdk-aac --enable-libfreetype --enable-libfribidi --enable-libmp3lame
 CONFIGURE_ARGS += --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg
 CONFIGURE_ARGS += --enable-libopus --enable-librtmp --enable-libsoxr --enable-libspeex
@@ -31,7 +31,6 @@ CONFIGURE_ARGS += --enable-libtheora --enable-libvo-amrwbenc --enable-libvorbis
 CONFIGURE_ARGS += --enable-libvpx --enable-libx264 --enable-libx265 --enable-openssl
 CONFIGURE_ARGS += --disable-debug --disable-doc --disable-htmlpages --disable-manpages
 CONFIGURE_ARGS += --disable-podpages --disable-static --disable-txtpages
-CONFIGURE_ARGS += --enable-encoder=ac3
 
 include ../../mk/spksrc.cross-cc.mk
 

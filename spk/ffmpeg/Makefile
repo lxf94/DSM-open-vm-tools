@@ -2,7 +2,7 @@ SPK_NAME = ffmpeg
 SPK_VERS = 3.3.2
 SPK_REV = 6
 SPK_ICON = src/ffmpeg.png
-CHANGELOG = "1. Update ffmpeg to 3.3.2  2. Enable AC3 encoder"
+CHANGELOG = "1. Update ffmpeg to 3.3.2  2. Produces libavresample for tvheadend"
 
 DEPENDS = cross/$(SPK_NAME)
 
