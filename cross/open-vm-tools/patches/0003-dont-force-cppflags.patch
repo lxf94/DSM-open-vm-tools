@@ -1,0 +1,15 @@
+--- m4/vmtools.m4.orig
++++ m4/vmtools.m4
+@@ -281,10 +281,10 @@
+       if test "$os" = freebsd; then
+          CUSTOM_$1_CPPFLAGS="-I/usr/local/include"
+       else
+-         CUSTOM_$1_CPPFLAGS="-I/usr/include"
++         CUSTOM_$1_CPPFLAGS=" "
+       fi
+       if test -n "$2"; then
+-         CUSTOM_$1_CPPFLAGS="${CUSTOM_$1_CPPFLAGS}/$2"
++         : CUSTOM_$1_CPPFLAGS="${CUSTOM_$1_CPPFLAGS}/$2"
+       fi
+    fi
+ ])

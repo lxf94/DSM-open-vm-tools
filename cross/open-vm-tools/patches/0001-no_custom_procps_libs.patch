@@ -1,0 +1,11 @@
+--- configure.ac.orig
++++ configure.ac
+@@ -863,7 +863,7 @@ if test "$with_procps" = "yes"; then
+       # XXX: no pkg-config and no procps-config means we need to
+       # hard-code a sensible default.
+       if test -z "$CUSTOM_PROCPS_LIBS"; then
+-         CUSTOM_PROCPS_LIBS="-L/lib"
++         : CUSTOM_PROCPS_LIBS="-L/lib"
+       fi
+ 
+       # Some distros provide libproc-${version}.so only, others provide the
