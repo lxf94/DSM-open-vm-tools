@@ -1,6 +1,6 @@
 SPK_NAME = open-vm-tools
 SPK_VERS = 10.1.15
-SPK_REV = 2 
+SPK_REV = 3 
 SPK_ICON = src/open-vm-tools.png
 
 REQUIRED_DSM = 6.1
@@ -8,8 +8,8 @@ BETA = 1
 
 DEPENDS = cross/$(SPK_NAME)
 
-MAINTAINER = SynoCommunity
-DESCRIPTION = open-vm-tools is a set of services and modules that enable several features in VMware products for better management of, and seamless user interactions with, guests
+MAINTAINER = mistzzt
+DESCRIPTION = open-vm-tools is a set of services and modules that enable several features in VMware products for better management of, and seamless user interactions with, guests.
 RELOAD_UI = yes
 DISPLAY_NAME = open-vm-tools
 
