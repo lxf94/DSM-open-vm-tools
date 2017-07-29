@@ -14,10 +14,10 @@ preinst ()
 {
     SYNOVersion=$(get_key_value /etc/VERSION majorversion)
 
-#    if [ ${SYNOVersion} -gt 4 ]; then
-#        echo "Your DSM version is not supported."
-#        exit 1
-#    fi
+    if [ ${SYNOVersion} -ne 6 ]; then
+        echo "Your DSM version is not supported."
+        exit 1
+    fi
 
     exit 0
 }
@@ -30,9 +30,6 @@ postinst ()
     # create some /var directory - just for us...
     mkdir ${INSTALL_DIR}/var
 
-    # remove network script, because it will stop the poweroff script
-    rm -f ${SYNOPKG_PKGDEST}/etc/vmware-tools/scripts/vmware/network
-
     # create link for etc and lib
     [ -e /etc/vmware-tools ] || ln -s ${SYNOPKG_PKGDEST}/etc/vmware-tools /etc/vmware-tools
     [ -e /lib/open-vm-tools ] || ln -s ${SYNOPKG_PKGDEST}/lib/open-vm-tools /lib/open-vm-tools
@@ -41,10 +38,6 @@ cat > /etc/vmware-tools/tools.conf << EOF
 bindir = "${SYNOPKG_PKGDEST}/bin"	
 libdir = "${SYNOPKG_PKGDEST}/lib"
 EOF
-
-# cat > /etc/xpe-release << EOF
-# XPEnology DSM
-# EOF
 
     exit 0
 }
@@ -65,7 +58,6 @@ postuninst ()
     # Remove link for etc and lib
     [ -L /etc/vmware-tools ] && rm -f /etc/vmware-tools
     [ -L /lib/open-vm-tools ] && rm -f /lib/open-vm-tools
-    # [ -e /etc/xpe-release ]  && rm -f /etc/xpe-release
 
     exit 0
 }
