@@ -8,7 +8,7 @@ BETA = 1
 
 DEPENDS = cross/$(SPK_NAME)
 
-MAINTAINER = mistzzt
+MAINTAINER = lxf94
 DESCRIPTION = open-vm-tools is a set of services and modules that enable several features in VMware products for better management of, and seamless user interactions with, guests.
 RELOAD_UI = yes
 DISPLAY_NAME = open-vm-tools
