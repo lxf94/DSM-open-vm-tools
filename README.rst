@@ -1,3 +1,18 @@
+本项目基于以下两个项目
+https://github.com/mistzzt/spksrc-deprecated/
+https://github.com/ymartin59/spksrc
+
+对比https://github.com/mistzzt/spksrc-deprecated/有以下更新
+
+open-vm-tools 更新到 10.3.10
+glib 更新到 2.57.1
+libmspack 更新到 10.1alpha
+libtirpc 更新到 1.1.4
+openssl 更新到 1.0.2r
+本项目仅是简单的对open-vm-tools及其依赖组件进行版本迭代更新，未进行也不会进行任何兼容性测试。
+
+
+
 spksrc
 ======
 spksrc is a cross compilation framework intended to compile and package software for Synology NAS devices. Packages are made available via the `SynoCommunity repository`_.
