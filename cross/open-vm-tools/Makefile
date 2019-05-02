@@ -1,6 +1,6 @@
 PKG_NAME = open-vm-tools
-PKG_VERS = 10.1.5
-PKG_BUILD = 5055683
+PKG_VERS = 10.3.10
+PKG_BUILD = 12406962
 PKG_EXT = tar.gz
 PKG_DIST_NAME = $(PKG_NAME)-$(PKG_VERS)-$(PKG_BUILD).$(PKG_EXT)
 PKG_DIST_SITE = https://github.com/vmware/open-vm-tools/releases/download/stable-$(PKG_VERS)

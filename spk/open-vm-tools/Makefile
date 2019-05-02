@@ -1,6 +1,6 @@
 SPK_NAME = open-vm-tools
-SPK_VERS = 10.1.15
-SPK_REV = 4 
+SPK_VERS = 10.3.10
+SPK_REV = 5 
 SPK_ICON = src/open-vm-tools.png
 
 REQUIRED_DSM = 6.1
