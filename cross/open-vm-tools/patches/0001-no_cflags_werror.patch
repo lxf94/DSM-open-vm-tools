@@ -1,6 +1,6 @@
 --- configure.ac.orig
 +++ configure.ac
-@@ -1137,7 +1137,7 @@
+@@ -1221,7 +1221,7 @@
  
  ### General flags / actions
  CFLAGS="$CFLAGS -Wall"
