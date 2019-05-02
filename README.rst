@@ -1,8 +1,9 @@
 本项目基于以下两个项目
+^^^^^^
 https://github.com/mistzzt/spksrc-deprecated/
 https://github.com/ymartin59/spksrc
 
-对比https://github.com/mistzzt/spksrc-deprecated/有以下更新
+对比https://github.com/mistzzt/spksrc-deprecated/ 有以下更新
 
 open-vm-tools 更新到 10.3.10
 glib 更新到 2.57.1
